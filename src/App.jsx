@@ -1,19 +1,21 @@
 import './App.css'
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import Header from './components/header'
-import Categories from './components/categories'
+import Home from './pages/home'
+import Product from './pages/product';
 
 function App() {
   return (
     <>
-      <Header />
-      <h1>Categories</h1>
-      <section className="image-container">
-        <Categories categoryName="Calzado" />
-        <Categories categoryName="Bolsos" />
-        <Categories categoryName="Billeteras" />
-        <Categories categoryName="Fragancias" />
-      </section>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route exact path="/" Component={Home}></Route>
+          <Route exact path="/product" Component={Product}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
