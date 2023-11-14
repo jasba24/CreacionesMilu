@@ -1,4 +1,4 @@
-a {
+.category-link {
   display: flex;
   flex-direction: column;
   color: black;
@@ -6,12 +6,12 @@ a {
   align-items: center;
 }
 
-img {
+.category-link img {
   border-radius: 50%;
   width: 80%;
 }
 
-h2 {
+.category-link h2 {
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 600;

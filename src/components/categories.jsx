@@ -7,7 +7,7 @@ function Categories(props) {
   // eslint-disable-next-line react/prop-types
   const { categoryName } = props
   return (
-    <a href="#first">
+    <a className="category-link" href="#first">
       <img src={categoryLogo} alt="Logo de la categoria" />
       <h2>{categoryName}</h2>
     </a>
