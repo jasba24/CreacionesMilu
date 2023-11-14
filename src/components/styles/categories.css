@@ -1,0 +1,18 @@
+a {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  text-decoration: none;
+  align-items: center;
+}
+
+img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+h2 {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}

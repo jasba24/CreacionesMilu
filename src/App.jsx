@@ -1,10 +1,19 @@
 import './App.css'
 
-function App() {
+import Header from './components/header'
+import Categories from './components/categories'
 
+function App() {
   return (
     <>
-      <div></div>
+      <Header />
+      <h1>Categories</h1>
+      <section className="image-container">
+        <Categories categoryName="Calzado" />
+        <Categories categoryName="Bolsos" />
+        <Categories categoryName="Billeteras" />
+        <Categories categoryName="Fragancias" />
+      </section>
     </>
   )
 }
