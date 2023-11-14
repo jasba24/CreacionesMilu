@@ -1,4 +1,5 @@
 import React from 'react'
+import "../components/styles/home.css"
 import Categories from '../components/categories'
 import ProductList from '../components/productList'
 import productLogo from '../assets/2.webp'

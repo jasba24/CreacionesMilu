@@ -1,10 +1,8 @@
-import './App.css'
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Header from './components/header'
 import Home from './pages/home'
-import Product from './pages/product';
+import Product from './pages/product'
 
 function App() {
   return (
@@ -13,7 +11,7 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/" Component={Home}></Route>
-          <Route exact path="/product" Component={Product}></Route>
+          <Route exact path="/product/:pageId" Component={Product}></Route>
         </Routes>
       </BrowserRouter>
     </>
