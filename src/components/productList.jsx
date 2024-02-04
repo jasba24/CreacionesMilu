@@ -8,11 +8,11 @@ function ProductList(props) {
     <section id={sectionName}>
       <h1>{sectionName}</h1>
       <div className="section-container">
-        <Product image={productImage} name={productName ?? sectionName}></Product>
-        <Product image={productImage} name={productName ?? sectionName}></Product>
-        <Product image={productImage} name={productName ?? sectionName}></Product>
-        <Product image={productImage} name={productName ?? sectionName}></Product>
-        <Product image={productImage} name={productName ?? sectionName}></Product> 
+        <Product id={`${sectionName}/1`} image={productImage} name={productName ?? sectionName}></Product>
+        <Product id={`${sectionName}/2`} image={productImage} name={productName ?? sectionName}></Product>
+        <Product id={`${sectionName}/3`} image={productImage} name={productName ?? sectionName}></Product>
+        <Product id={`${sectionName}/4`} image={productImage} name={productName ?? sectionName}></Product>
+        <Product id={`${sectionName}/5`} image={productImage} name={productName ?? sectionName}></Product> 
       </div>
     </section>
   )

@@ -1,35 +1,37 @@
 import React from 'react'
-import "../components/styles/home.css"
+import '../components/styles/home.css'
 import Categories from '../components/categories'
 import ProductList from '../components/productList'
-import productLogo from '../assets/2.webp'
+import zapato from '../assets/1.jpg'
+import bolso from '../assets/bolso.jpeg'
+import billeteta from '../assets/billeteta.jpeg'
+import falsaLocion from '../assets/falsaLocion.jpeg'
+import Hero from '../components/hero'
 
 function Home() {
   return (
     <>
+      <Hero></Hero>
       <h1>Categories</h1>
       <section className="image-container">
-        <Categories categoryName="Calzado" />
-        <Categories categoryName="Bolsos" />
-        <Categories categoryName="Billeteras" />
-        <Categories categoryName="Fragancias" />
+        <Categories categoryLogo={zapato} categoryName="Calzado" />
+        <Categories categoryLogo={bolso} categoryName="Bolsos" />
+        <Categories categoryLogo={billeteta} categoryName="Billeteras" />
+        <Categories categoryLogo={falsaLocion} categoryName="Fragancias" />
       </section>
       <ProductList
         sectionName="Calzado"
         productName="Sandalia en Cuero"
-        productImage={productLogo}
+        productImage={zapato}
       ></ProductList>
-      <ProductList
-        sectionName="Bolsos"
-        productImage={productLogo}
-      ></ProductList>
+      <ProductList sectionName="Bolsos" productImage={bolso}></ProductList>
       <ProductList
         sectionName="Billeteras"
-        productImage={productLogo}
+        productImage={billeteta}
       ></ProductList>
       <ProductList
         sectionName="Fragancias"
-        productImage={productLogo}
+        productImage={falsaLocion}
       ></ProductList>
     </>
   )

@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 
 function Product(props) {
   // eslint-disable-next-line react/prop-types
-  const { image, name } = props
+  const { image, name, id} = props
   return (
-    <Link to="/product">
+    <Link to={`/product/${id}`}>
       <img src={image} alt="referencia del producto" />
       <h2>{name}</h2>
       <button className="buy-button">comprar</button>
-    </Link>
+  </Link>
   )
 }
 

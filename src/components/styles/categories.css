@@ -8,11 +8,12 @@
 
 .category-link img {
   border-radius: 50%;
-  width: 80%;
+  width: 200px;
+  height: 200px;
 }
 
 .category-link h2 {
-  font-size: 15px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 600;
 }
