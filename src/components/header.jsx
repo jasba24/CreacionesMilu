@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 
 import shoppingCart from '../assets/shoppingCart.png'
 import menu from '../assets/menu.png'
+import logo from '../assets/logo.png'
 import './styles/header.css'
 import UserFormLogin from './userFormLogin'
 import { Link } from 'react-router-dom'
@@ -12,8 +13,11 @@ function Header() {
   return (
     <header>
       <Link to={'/'} className="start">
-        Marroquineria en cuero de alta calidad
+        <img className="logo-icon" src={logo} alt="" />
       </Link>
+      <h1>
+        Marroquineria en <br /> cuero de alta calidad
+      </h1>
       <nav>
         <img
           onClick={() => setShowForm(!showForm)}

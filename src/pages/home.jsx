@@ -21,7 +21,7 @@ function Home() {
   return (
     <>
       <Hero></Hero>
-      <h1>Categories</h1>
+      <h1>Categorías</h1>
       <section className="image-container">
         <Categories
           categoryLink="#shoes"

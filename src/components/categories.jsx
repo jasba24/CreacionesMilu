@@ -7,8 +7,7 @@ function Categories(props) {
   const { categoryName, categoryLogo, categoryLink } = props
   return (
     <a className="category-link" href={categoryLink}>
-      <img src={categoryLogo} alt="Logo de la categoria" />
-      <h2>{categoryName}</h2>
+      <img src={categoryLogo} title={categoryName} alt="Logo de la categoria" />
     </a>
   )
 }
