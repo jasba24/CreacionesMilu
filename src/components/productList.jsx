@@ -1,18 +1,23 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 import Product from './product'
 
 function ProductList(props) {
-  // eslint-disable-next-line react/prop-types
-  const { sectionName, productName, productImage } = props
+  const { sectionName, productName, productImage, categoryLink } = props
+
   return (
-    <section id={sectionName}>
+    <section className={sectionName} id={categoryLink}>
       <h1>{sectionName}</h1>
       <div className="section-container">
-        <Product id={`${sectionName}/1`} image={productImage} name={productName ?? sectionName}></Product>
-        <Product id={`${sectionName}/2`} image={productImage} name={productName ?? sectionName}></Product>
-        <Product id={`${sectionName}/3`} image={productImage} name={productName ?? sectionName}></Product>
-        <Product id={`${sectionName}/4`} image={productImage} name={productName ?? sectionName}></Product>
-        <Product id={`${sectionName}/5`} image={productImage} name={productName ?? sectionName}></Product> 
+        {productName &&
+          productName.map((v, i) => (
+            <Product
+              key={i}
+              id={`${sectionName}/${i + 1}`}
+              image={productImage}
+              name={v}
+            ></Product>
+          ))}
       </div>
     </section>
   )

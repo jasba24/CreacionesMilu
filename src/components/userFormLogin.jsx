@@ -1,18 +1,20 @@
 import React from 'react'
 
+import "./styles/userFormLogin.css"
+
 function UserFormLogin() {
   return (
-    <form action="">
+    <form className='menu'>
       <label htmlFor="name">Nombre Completo</label>
-      <input type="text" id="name" />
+      <input className='menu_input' type="text" id="name" />
       <label htmlFor="mail">Correo Electronico</label>
-      <input type="text" id="mail" />
+      <input className='menu_input' type="text" id="mail" />
       <label htmlFor="password">Contraseña</label>
-      <input type="password" id="password" />
+      <input className='menu_input' type="password" id="password" />
       <label htmlFor="pass">Repetir contraseña</label>
-      <input type="password" id="pass" />
+      <input className='menu_input' type="password" id="pass" />
       <label htmlFor="phone">Celular</label>
-      <input type="tel" id="phone" />
+      <input className='menu_input' type="tel" id="phone" />
       <button type="submit">Enviar</button>
     </form>
   )

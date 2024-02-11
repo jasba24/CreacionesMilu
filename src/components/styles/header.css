@@ -1,6 +1,6 @@
 header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 100px;
@@ -9,21 +9,18 @@ header {
   /* #584f4c */
 }
 
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  height: 100%;
-}
-
-header h1 {
+.start {
   margin: 0;
   font-weight: bold;
   color: white;
   text-transform: uppercase;
   font-size: 25px;
   font-family: cursive;
+  text-decoration: none;
+}
+
+nav img {
+  cursor: pointer;
 }
 
 .store-icon {
@@ -38,13 +35,6 @@ header h1 {
   position: absolute;
   top: 20px;
   right: 100px;
-}
-
-.user-icon {
-  width: 50px;
-  position: absolute;
-  top: 20px;
-  right: 180px;
 }
 
 .logo-icon {

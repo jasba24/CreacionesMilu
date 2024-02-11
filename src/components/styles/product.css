@@ -13,6 +13,9 @@ main {
 main div img {
   border: 20px solid #1ebae5;
 }
+main img {
+  width: 100%;
+}
 
 .buy-content {
   display: flex;

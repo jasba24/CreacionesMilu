@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/header'
 import Home from './pages/home'
 import Product from './pages/product'
+import Login from './pages/login'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             path="/product/:category/:pageId"
             Component={Product}
           ></Route>
+          <Route exact path="/login" Component={Login}></Route>
         </Routes>
       </BrowserRouter>
     </>
