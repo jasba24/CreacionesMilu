@@ -2,7 +2,7 @@
 import React from 'react'
 import Product from './product'
 
-function ProductList(props) {
+function CategoryList(props) {
   const { sectionName, productName, productImage, categoryLink } = props
 
   return (
@@ -13,7 +13,7 @@ function ProductList(props) {
           productName.map((v, i) => (
             <Product
               key={i}
-              id={`${sectionName}/${i + 1}`}
+              id={`${v}/${i + 1}`}
               image={productImage}
               name={v}
             ></Product>
@@ -23,4 +23,4 @@ function ProductList(props) {
   )
 }
 
-export default ProductList
+export default CategoryList

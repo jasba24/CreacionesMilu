@@ -1,7 +1,7 @@
 import React from 'react'
 import '../components/styles/home.css'
 import Categories from '../components/categories'
-import ProductList from '../components/productList'
+import CategoryList from '../components/categoryList'
 import zapato from '../assets/zapato2.jpeg'
 import bolso from '../assets/bolso.jpeg'
 import billeteta from '../assets/billeteta.jpeg'
@@ -16,7 +16,7 @@ function Home() {
     'Deportivos',
     'Plataformas'
   ]
-  const bag = ['Mocasines', 'Baletas', 'Sandalias', 'Deportivos', 'Plataformas']
+  const bag = ['Elegantes', 'Deportivos', 'Artesanales', 'Bolsos de Mano']
 
   return (
     <>
@@ -44,30 +44,30 @@ function Home() {
           categoryName="Fragancias"
         />
       </section>
-      <ProductList
+      <CategoryList
         categoryLink="shoes"
         sectionName="Calzado"
         productName={shoes}
         productImage={zapato}
-      ></ProductList>
-      <ProductList
+      ></CategoryList>
+      <CategoryList
         categoryLink="bag"
         sectionName="Bolsos"
         productName={bag}
         productImage={bolso}
-      ></ProductList>
-      <ProductList
+      ></CategoryList>
+      <CategoryList
         categoryLink="purse"
         sectionName="Billeteras"
         productName={bag}
         productImage={billeteta}
-      ></ProductList>
-      <ProductList
+      ></CategoryList>
+      <CategoryList
         categoryLink="lotion"
         sectionName="Fragancias"
         productName={bag}
         productImage={falsaLocion}
-      ></ProductList>
+      ></CategoryList>
     </>
   )
 }

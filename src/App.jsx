@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Header from './components/header'
 import Home from './pages/home'
-import Product from './pages/product'
+import shoes from './pages/shoes'
 import Login from './pages/login'
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
           <Route exact path="/" Component={Home}></Route>
           <Route
             exact
-            path="/product/:category/:pageId"
-            Component={Product}
+            path="/:category/:pageId"
+            Component={shoes}
           ></Route>
           <Route exact path="/login" Component={Login}></Route>
         </Routes>
