@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer span {
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer .logo {
+  width: 80px;
+}

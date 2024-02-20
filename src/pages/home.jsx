@@ -15,9 +15,17 @@ function Home() {
     ['Otros', billetera, '#purse', 'purse']
   ]
   const productCategories = [
-    ['Mocasines', 'Baletas', 'Sandalias', 'Deportivos', 'Plataformas'],
-    ['Elegantes', 'Deportivos', 'Artesanales', 'Bolsos de Mano'],
-    ['Elegantes', 'Deportivos', 'Artesanales', 'Bolsos de Mano']
+    [
+      'Bolicheros',
+      'Deportivos',
+      'Mocasines',
+      'Plataformas',
+      'Sandalias',
+      'Suecos',
+      'Tacones'
+    ],
+    ['Manos Libres', 'Carriel', 'Tulas', 'Bolsos de Mano', "Mochila Wayuu", "Morral de Tela"],
+    ['Calzado Hombre', 'Billeteras', 'Correas', 'Lociones']
   ]
 
   return (

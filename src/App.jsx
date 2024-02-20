@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Header from './components/header'
+import Footer from './components/footer'
 import Home from './pages/home'
 import shoes from './pages/shoes'
 import Login from './pages/login'
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/category" Component={Category}></Route>
           <Route exact path="/login" Component={Login}></Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   )
