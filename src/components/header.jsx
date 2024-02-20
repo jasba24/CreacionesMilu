@@ -5,7 +5,7 @@ import shoppingCart from '../assets/shoppingCart.png'
 import menu from '../assets/menu.png'
 import logo from '../assets/logo.png'
 import './styles/header.css'
-import UserFormLogin from './userFormLogin'
+import Menu from './menu'
 import { Link } from 'react-router-dom'
 
 function Header() {
@@ -27,7 +27,7 @@ function Header() {
         />
         <img className="shoe-icon" src={shoppingCart} alt="logo mercancia" />
       </nav>
-      {showForm && <UserFormLogin></UserFormLogin>}
+      {showForm && <Menu></Menu>}
     </header>
   )
 }

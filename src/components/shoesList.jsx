@@ -2,13 +2,13 @@ import React from 'react'
 import { useLocation } from 'react-router-dom'
 import Mocasines from '../assets/1.jpg'
 import Baletas from '../assets/bolso.jpeg'
-import Sandalias from '../assets/billeteta.jpeg'
+import Sandalias from '../assets/billetera.jpeg'
 import Deportivos from '../assets/falsaLocion.jpeg'
-import Plataformas from "../assets/2.webp"
+import Plataformas from '../assets/2.webp'
 
 function ShoesList() {
   let location = useLocation()
-  let route = location.pathname.split('/')[2]
+  let route = location.pathname.split('/')[1]
   let routeImages = {
     Mocasines: Mocasines,
     Baletas: Baletas,

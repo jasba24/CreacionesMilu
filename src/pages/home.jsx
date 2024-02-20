@@ -4,70 +4,49 @@ import Categories from '../components/categories'
 import CategoryList from '../components/categoryList'
 import zapato from '../assets/zapato2.jpeg'
 import bolso from '../assets/bolso.jpeg'
-import billeteta from '../assets/billeteta.jpeg'
+import billetera from '../assets/billetera.jpeg'
 import falsaLocion from '../assets/falsaLocion.jpeg'
 import Hero from '../components/hero'
 
 function Home() {
-  const shoes = [
-    'Mocasines',
-    'Baletas',
-    'Sandalias',
-    'Deportivos',
-    'Plataformas'
+  const categories = [
+    ['Calzado', zapato, '#shoes', 'shoes'],
+    ['Bolsos', bolso, '#bag', 'bag'],
+    ['Otros', billetera, '#purse', 'purse']
   ]
-  const bag = ['Elegantes', 'Deportivos', 'Artesanales', 'Bolsos de Mano']
+  const productCategories = [
+    ['Mocasines', 'Baletas', 'Sandalias', 'Deportivos', 'Plataformas'],
+    ['Elegantes', 'Deportivos', 'Artesanales', 'Bolsos de Mano'],
+    ['Elegantes', 'Deportivos', 'Artesanales', 'Bolsos de Mano']
+  ]
 
   return (
     <>
       <Hero></Hero>
       <h1>Categorías</h1>
       <section className="image-container">
-        <Categories
-          categoryLink="#shoes"
-          categoryLogo={zapato}
-          categoryName="Calzado"
-        />
-        <Categories
-          categoryLink="#bag"
-          categoryLogo={bolso}
-          categoryName="Bolsos"
-        />
-        <Categories
-          categoryLink="#purse"
-          categoryLogo={billeteta}
-          categoryName="Billeteras"
-        />
-        <Categories
-          categoryLink="#lotion"
-          categoryLogo={falsaLocion}
-          categoryName="Fragancias"
-        />
+        {categories.map((v, i) => {
+          return (
+            <Categories
+              key={i}
+              categoryName={v[0]}
+              categoryLogo={v[1]}
+              categoryLink={v[2]}
+            />
+          )
+        })}
       </section>
-      <CategoryList
-        categoryLink="shoes"
-        sectionName="Calzado"
-        productName={shoes}
-        productImage={zapato}
-      ></CategoryList>
-      <CategoryList
-        categoryLink="bag"
-        sectionName="Bolsos"
-        productName={bag}
-        productImage={bolso}
-      ></CategoryList>
-      <CategoryList
-        categoryLink="purse"
-        sectionName="Billeteras"
-        productName={bag}
-        productImage={billeteta}
-      ></CategoryList>
-      <CategoryList
-        categoryLink="lotion"
-        sectionName="Fragancias"
-        productName={bag}
-        productImage={falsaLocion}
-      ></CategoryList>
+      {categories.map((v, i) => {
+        return (
+          <CategoryList
+            key={i}
+            sectionName={v[0]}
+            productImage={v[1]}
+            categoryLink={v[3]}
+            productName={productCategories[i]}
+          />
+        )
+      })}
     </>
   )
 }
