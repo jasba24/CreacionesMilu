@@ -17,6 +17,7 @@ h1 {
   overflow-x: scroll;
   background-color: rgba(0, 255, 209, 0.4);
   margin: 0 20px;
+  width: 97%;
 }
 
 .section-container a {

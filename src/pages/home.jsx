@@ -25,7 +25,7 @@ function Home() {
       'Tacones'
     ],
     ['Manos Libres', 'Carriel', 'Tulas', 'Bolsos de Mano', "Mochila Wayuu", "Morral de Tela"],
-    ['Calzado Hombre', 'Billeteras', 'Correas', 'Lociones']
+    ['Billeteras', 'Correas Mujer', 'Correas Hombre', 'Lociones']
   ]
 
   return (
