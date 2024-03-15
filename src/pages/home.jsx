@@ -6,7 +6,6 @@ import zapato from '../assets/zapato2.jpeg'
 import bolso from '../assets/bolso.jpeg'
 import billetera from '../assets/billetera.jpeg'
 import falsaLocion from '../assets/falsaLocion.jpeg'
-import Hero from '../components/hero'
 
 function Home() {
   const categories = [
@@ -24,13 +23,20 @@ function Home() {
       'Suecos',
       'Tacones'
     ],
-    ['Manos Libres', 'Carriel', 'Tulas', 'Bolsos de Mano', "Mochila Wayuu", "Morral de Tela"],
+    [
+      'Manos Libres',
+      'Carriel',
+      'Tulas',
+      'Bolsos de Mano',
+      'Mochila Wayuu',
+      'Morral de Tela'
+    ],
     ['Billeteras', 'Correas Mujer', 'Correas Hombre', 'Lociones']
   ]
 
   return (
     <>
-      <Hero></Hero>
+      <div className="hero-container"></div>
       <h1>Categorías</h1>
       <section className="image-container">
         {categories.map((v, i) => {

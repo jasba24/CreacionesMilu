@@ -11,12 +11,10 @@ function Footer() {
   return (
     <div className="footer">
       <img className="logo" src={logo} alt="logo" />
-      <span>Creaciones Milú Shoes</span>
       <div>
-        <a href="https://wa.link/wg8v7o" target="_blank">
-          <img src={whatsapp} alt="whatsapp-icon" />
-          <span> +57 315 437 9739 </span>
-        </a>
+        <span>Creaciones Milú Shoes</span>
+      </div>
+      <div className="footer-link">
         <a href="https://www.facebook.com/lucelly.bedoyagarzon" target="_blank">
           <img src={facebook} alt="facebook-icon" />
         </a>
@@ -25,6 +23,10 @@ function Footer() {
           target="_blank"
         >
           <img src={instagram} alt="instagram-icon" />
+        </a>
+        <a href="https://wa.link/wg8v7o" target="_blank">
+          <img src={whatsapp} alt="whatsapp-icon" />
+          <span className="phone"> +57 315 437 9739 </span>
         </a>
       </div>
     </div>

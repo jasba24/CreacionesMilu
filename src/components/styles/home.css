@@ -28,15 +28,8 @@ h1 {
   color: #544f4f;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   font-weight: 900;
-}
-
-.section-container a:first-child {
-  margin-left: 20px;
-}
-
-.section-container a:last-child {
-  margin-right: 20px;
 }
 
 .section-container img {
@@ -61,7 +54,6 @@ h1 {
   margin: 0;
   outline: none;
   padding: 8px 0.8em;
-  position: relative;
   text-align: center;
   text-decoration: none;
   user-select: none;
@@ -73,4 +65,29 @@ h1 {
 .buy-button:hover,
 .buy-button:focus {
   background-color: #31c6d4;
+}
+
+@media (max-width: 1300px) {
+  .section-container img {
+    height: 200px;
+  }
+  .section-container h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-container {
+    overflow-x: hidden;
+    flex-direction: column;
+  }
+  .section-container img {
+    height: 500px;
+  }
+  .section-container h2 {
+    font-size: 40px;
+  }
+  .buy-button {
+    font-size: 40px;
+  }
 }

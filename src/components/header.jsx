@@ -21,11 +21,11 @@ function Header() {
       <nav>
         <img
           onClick={() => setShowForm(!showForm)}
-          className="store-icon"
+          className="store-icon icon"
           src={menu}
           alt="logo de tienda"
         />
-        <img className="shoe-icon" src={shoppingCart} alt="logo mercancia" />
+        <img className="shoe-icon icon" src={shoppingCart} alt="logo mercancia" />
       </nav>
       {showForm && <Menu></Menu>}
     </header>
