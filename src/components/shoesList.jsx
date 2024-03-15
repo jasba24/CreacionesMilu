@@ -3,12 +3,14 @@ import './styles/shoesList.css'
 
 import { useLocation } from 'react-router-dom'
 import Bolicheros from './shoesList/bolicheros'
+import Tacon from './shoesList/tacon'
 
 function ShoesList() {
   let location = useLocation()
   let route = location.pathname.split('/')[1]
   let routeImages = {
-    Bolicheros: <Bolicheros></Bolicheros>
+    Bolicheros: <Bolicheros></Bolicheros>,
+    Tacones: <Tacon></Tacon>
   }
 
   return (
