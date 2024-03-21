@@ -1,3 +1,5 @@
+import ImageContainer from './imagecontainer'
+
 function importAll(r) {
   let images = []
   Object.values(r).forEach(({ default: path }) => {
@@ -25,15 +27,11 @@ function Bolicheros() {
         Bolicheros artesanal en cuero y fique. <br /> Valor: 160.000
       </h1>
       <div className="section-container">
-        {images160000.map((v, i) => {
-          return <img key={i} src={v.path} alt="" />
-        })}
+        <ImageContainer imgs={images160000}></ImageContainer>
       </div>
       <h1>Valor: 190.000</h1>
       <div className="section-container">
-        {images190000.map((v, i) => {
-          return <img key={i} src={v.path} alt="" />
-        })}
+        <ImageContainer imgs={images190000}></ImageContainer>
       </div>
     </div>
   )

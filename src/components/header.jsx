@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 
 import shoppingCart from '../assets/shoppingCart.png'
 import menu from '../assets/menu.png'
@@ -10,6 +10,11 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   const [showForm, setShowForm] = useState(false)
+
+  localStorage.clear()
+
+  const counter = useRef(localStorage.length)
+
   return (
     <header>
       <Link to={'/'} className="start">
@@ -25,7 +30,14 @@ function Header() {
           src={menu}
           alt="logo de tienda"
         />
-        <img className="shoe-icon icon" src={shoppingCart} alt="logo mercancia" />
+        <Link to={'/products'}>
+          <img
+            className="shoe-icon icon"
+            src={shoppingCart}
+            alt="logo mercancia"
+          />
+          <p className="text-icon">{counter.current}</p>
+        </Link>
       </nav>
       {showForm && <Menu></Menu>}
     </header>

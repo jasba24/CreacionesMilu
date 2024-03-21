@@ -12,7 +12,7 @@ function Footer() {
     <div className="footer">
       <img className="logo" src={logo} alt="logo" />
       <div>
-        <span>Creaciones Milú Shoes</span>
+        <span>Variedades Milú Shoes</span>
       </div>
       <div className="footer-link">
         <a href="https://www.facebook.com/lucelly.bedoyagarzon" target="_blank">

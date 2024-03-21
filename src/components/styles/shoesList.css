@@ -10,3 +10,13 @@
   width: 200px;
   height: 300px;
 }
+
+.product-image {
+  background-color: #00ffd1;
+}
+
+.product-button {
+  position: relative;
+  left: 15%;
+  margin-bottom: 15px;
+}

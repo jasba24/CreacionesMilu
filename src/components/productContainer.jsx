@@ -11,7 +11,7 @@ function importAll(r) {
   return images
 }
 
-function ProductContainer({url}) {
+function ProductContainer({ url }) {
   const productUrl = `${url}*.jpg`
   const images160000 = importAll(
     import.meta.glob(`../../assets/${productUrl}`, { eager: true })
@@ -27,7 +27,6 @@ function ProductContainer({url}) {
       </h1>
       <div className="section-container">
         {images160000.map((v, i) => {
-          console.log(v.path)
           return <img key={i} src={v.path} alt="" />
         })}
       </div>

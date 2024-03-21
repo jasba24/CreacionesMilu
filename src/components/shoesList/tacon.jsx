@@ -1,3 +1,5 @@
+import ImageContainer from './imageContainer'
+
 function importAll(r) {
   let images = []
   Object.values(r).forEach(({ default: path }) => {
@@ -11,30 +13,33 @@ function importAll(r) {
   return images
 }
 const images100000Sintetico = importAll(
-  import.meta.glob(['../../assets/Tacon/100000sintetico/*.jpg'], { eager: true })
+  import.meta.glob(['../../assets/Tacon/100000sintetico60000/*.jpg'], {
+    eager: true
+  })
+)
+
+const images165000FiqueCuero85000 = importAll(
+  import.meta.glob(['../../assets/Tacon/165000FiqueCuero85000/*.jpg'], {
+    eager: true
+  })
 )
 
 // const images190000 = importAll(
 //   import.meta.glob(['../../assets/tacon/190000/*.jpg'], { eager: true })
-// )
 
 function Tacon() {
   return (
     <div className="product-container">
       <h1>
-        Tacon artesanal en cuero y fique. <br /> Valor: 100.000
+        Tacon Sintético <br /> Valor: 100.000
       </h1>
       <div className="section-container">
-        {images100000Sintetico.map((v, i) => {
-          return <img key={i} src={v.path} alt="" />
-        })}
+        <ImageContainer imgs={images100000Sintetico}></ImageContainer>
       </div>
-      {/* <h1>Valor: 190.000</h1>
+       <h1>Valor: 165.000</h1>
       <div className="section-container">
-        {images190000.map((v, i) => {
-          return <img key={i} src={v.path} alt="" />
-        })}
-      </div> */}
+        <ImageContainer imgs={images165000FiqueCuero85000}></ImageContainer>
+      </div>
     </div>
   )
 }
