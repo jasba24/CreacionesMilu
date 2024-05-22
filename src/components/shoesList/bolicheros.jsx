@@ -1,4 +1,4 @@
-import ImageContainer from './imagecontainer'
+import ImageContainer from './imageContainer'
 
 function importAll(r) {
   let images = []

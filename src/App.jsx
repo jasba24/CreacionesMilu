@@ -7,14 +7,14 @@ import Home from './pages/home'
 import shoes from './pages/shoes'
 import Category from './pages/category'
 import Shooping from './pages/shopping'
-
+// import { useState } from 'react'
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Header />
-        <ProviderProduct value={[]}>
+        <ProviderProduct>
+          <Header />
           <Routes>
             <Route exact path="/" Component={Home}></Route>
             <Route exact path="/:category/:pageId" Component={shoes}></Route>
