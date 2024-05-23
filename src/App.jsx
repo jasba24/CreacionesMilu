@@ -1,4 +1,3 @@
-import { ProviderProduct } from './context/productContext'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Header from './components/header'
@@ -13,7 +12,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <ProviderProduct>
           <Header />
           <Routes>
             <Route exact path="/" Component={Home}></Route>
@@ -21,7 +19,6 @@ function App() {
             <Route exact path="/category" Component={Category}></Route>
             <Route exact path="/products" Component={Shooping}></Route>
           </Routes>
-        </ProviderProduct>
         <Footer />
       </BrowserRouter>
     </>

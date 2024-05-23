@@ -1,9 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 
 import '../components/styles/shopping.css'
-import ProductContext from './../context/productContext'
 
-// const contextProduct = useContext(ProductContext)
 
 function Shooping() {
   const imgs = []

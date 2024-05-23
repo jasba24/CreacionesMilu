@@ -1,13 +1,10 @@
-import React, { useContext } from 'react'
-import ProductContext from '../../context/productContext'
+import React from 'react'
 
 function ImageContainer(imgs) {
-  const contextProduct = useContext(ProductContext)
 
   const setProducts = (i, imgs) => {
     console.log({imgs});
     localStorage.setItem(i, imgs)
-    contextProduct.setCount(contextProduct.count++)
   }
 
   return (
