@@ -11,11 +11,16 @@
   text-decoration: none;
 }
 
-.footer span {
+.phone,
+span {
   font-size: 40px;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.phone {
+  display: contents;
 }
 
 .footer .logo {
@@ -27,7 +32,8 @@
 }
 
 @media (max-width: 2000px) {
-  .footer span {
+  .footer span,
+  .phone {
     font-size: 25px;
   }
 }

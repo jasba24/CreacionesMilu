@@ -24,9 +24,9 @@ function Footer() {
         >
           <img src={instagram} alt="instagram-icon" />
         </a>
-        <a href="https://wa.link/wg8v7o" target="_blank">
+        <a className="phone" href="https://wa.link/wg8v7o" target="_blank">
           <img src={whatsapp} alt="whatsapp-icon" />
-          <span className="phone"> +57 315 437 9739 </span>
+          +57 315 437 9739
         </a>
       </div>
     </div>

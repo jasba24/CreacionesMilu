@@ -40,11 +40,6 @@ function Bolsos({ route }) {
         Bolsos en cuero <br /> Valor: 160.000
       </h1>
       <div id="images-container"></div>
-      {/* {path.map(e => (
-        <div className="section-container">
-          <ImageContainer route={e}></ImageContainer>
-        </div>
-      ))} */}
     </div>
   )
 }
