@@ -24,7 +24,7 @@ function Home() {
       'Tacones'
     ],
     [
-      'Manos Libres',
+      'Bolsos',
       'Carriel',
       'Tulas',
       'Bolsos de Mano',
