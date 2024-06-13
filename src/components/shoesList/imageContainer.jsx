@@ -1,62 +1,58 @@
-import React from 'react'
 import { getDownloadURL, getStorage, listAll, ref } from 'firebase/storage'
-import { firebaseApp } from './../../main';
+import { firebaseApp } from './../../main'
+import { getImages } from '../../utils/getImages'
 
-function ImageContainer(r) {
-  const route = r.route.route
-  // const setProducts = (i, imgs) => {
-  //   console.log({ imgs })
-  //   localStorage.setItem(i, imgs)
-  // }
+function ImageContainer() {
+  let params = location.pathname.split('/')[2]
+  let route = location.pathname.split('/')[1].split('%20').join('')
 
-  console.log(route);
-  const storage = getStorage(firebaseApp, 'gs://test-55f80.appspot.com')
-  const listRef = ref(storage, `${route}/`)
-
-  listAll(listRef)
-    .then(res => {
-      console.log({res})
+  getImages(params, route)
+  /* if (params == 1) {
+    const storage = getStorage(firebaseApp, 'gs://test-55f80.appspot.com')
+    const listRef = ref(storage, `YF/${route}/160.000`)
+    listAll(listRef).then(res => {
+      const container = document.getElementById('images-container')
+      const list = []
+      res.items.map(e => {
+        getDownloadURL(
+          ref(storage, `gs://test-55f80.appspot.com/${e._location.path}`)
+        ).then(url => {
+          list.push({ url })
+          const img = document.createElement('img')
+          img.className = 'product-image'
+          img.src = url
+          container.appendChild(img)
+        })
+      })
     })
-
-    // getDownloadURL(
-    //   ref(storage, 'gs://test-55f80.appspot.com/sandalia/IMG-20240215-WA0101.jpg')
-    // )
-    .then(url => {
-      // const xhr = new XMLHttpRequest()
-      // xhr.responseType = 'blob'
-      // xhr.onload = event => {
-      //   const blob = xhr.response
-      // }
-      // xhr.open('GET', url)
-      // xhr.send()
-      // console.log(img)
-      // // Or inserted into an <img> element
-      const img = document.getElementById('myimg')
-      img.setAttribute('src', url)
+  } else {
+    const storage = getStorage(firebaseApp, 'gs://test-55f80.appspot.com')
+    const listRef = ref(storage, `${route}/160.000`)
+    listAll(listRef).then(res => {
+      const container = document.getElementById('images-container')
+      const list = []
+      console.log(res.items);
+      res.items.map(e => {
+        getDownloadURL(
+          ref(storage, `gs://test-55f80.appspot.com/${e._location.path}`)
+        ).then(url => {
+          list.push({ url })
+          const img = document.createElement('img')
+          img.className = 'product-image'
+          img.src = url
+          container.appendChild(img)
+        })
+      })
     })
-    .catch(error => {
-      // Handle any errors
-    })
-  // console.log(storage)
+  } */
 
   return (
-    <>
-    <h1></h1>
-      {/* {imgs.imgs.map((v, i) => {
-        return (
-          <div className="product-image">
-            <img key={i} src={v.path} alt="" />
-            <button
-              key={v}
-              onClick={() => setProducts(i, v.path)}
-              className="buy-button product-button"
-            >
-              separar producto
-            </button>
-          </div>
-        )
-      })} */}
-    </>
+    <div className="product-container">
+      <h1>
+        Bolsos en cuero <br /> Valor: 160.000
+      </h1>
+      <div id="images-container"></div>
+    </div>
   )
 }
 

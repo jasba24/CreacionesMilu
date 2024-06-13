@@ -13,7 +13,7 @@ function CategoryList(props) {
           productName.map((v, i) => (
             <Product
               key={i}
-              id={`${v}/${i + 1}`}
+              id={`${v}/`}
               image={productImage}
               name={v}
             ></Product>

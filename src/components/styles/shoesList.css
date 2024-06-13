@@ -13,10 +13,35 @@
 
 .product-image {
   background-color: #00ffd1;
+  border: 10px solid #00ffd1;
 }
 
 .product-button {
   position: relative;
   left: 15%;
   margin-bottom: 15px;
+}
+
+.catalog {
+  background-color: #fff;
+  width: 439px;
+  height: 319px;
+}
+
+
+.catalog1,
+.catalog2 {
+  box-shadow: -1px 0px 163px 35px rgba(0, 0, 0, 1);
+  position: absolute;
+  bottom: 100px;
+  left: 65px;
+  outline: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.catalog2 {
+  left: 290px;
 }
