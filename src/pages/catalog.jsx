@@ -1,6 +1,6 @@
 import React from 'react'
 import '../components/styles/product.css'
-import CatalogList from '../components/CatalogList'
+import CatalogList from '../components/catalogList'
 import { Link } from 'react-router-dom'
 
 function Catalog() {
