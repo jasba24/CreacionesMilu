@@ -62,3 +62,16 @@ span {
     display: none;
   }
 }
+
+@media (max-width: 450px) {
+  .footer img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 350px) {
+  .phone {
+    font-size: 20px;
+  }
+}
