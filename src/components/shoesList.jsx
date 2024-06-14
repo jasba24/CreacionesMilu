@@ -8,7 +8,6 @@ import Bolsos from './shoesList/Bolsos'
 function ShoesList() {
   let location = useLocation()
   let route = location.pathname.split('/')[1].split('%20').join('')
-  console.log(route);
   let routeImages = {
     Bolicheros: <Bolicheros></Bolicheros>,
     Tacones: <Tacon></Tacon>,

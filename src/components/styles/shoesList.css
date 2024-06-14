@@ -23,18 +23,19 @@
 }
 
 .catalog {
-  background-color: #fff;
+  /* background-color: #fff; */
   width: 439px;
   height: 319px;
+  display: flex;
+  align-items: center;
 }
-
 
 .catalog1,
 .catalog2 {
-  box-shadow: -1px 0px 163px 35px rgba(0, 0, 0, 1);
-  position: absolute;
-  bottom: 100px;
-  left: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* box-shadow: -1px 0px 163px 35px rgba(0, 0, 0, 1); */
   outline: none;
   color: #fff;
   text-transform: uppercase;
