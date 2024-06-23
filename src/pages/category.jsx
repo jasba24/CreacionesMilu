@@ -2,41 +2,19 @@ import React from 'react'
 import '../components/styles/product.css'
 import Categories from '../components/categories'
 import CategoryList from '../components/categoryList'
-import zapato from '../assets/zapato2.jpeg'
-import bolso from '../assets/bolso.jpeg'
-import billetera from '../assets/billetera.jpeg'
+import { getCategories } from '../utils/getCategories'
 // import falsaLocion from '../assets/falsaLocion.jpeg'
 
 function Category() {
-  const categories = [
-    ['Calzado', zapato, '#shoes', 'shoes'],
-    ['Bolsos', bolso, '#bag', 'bag'],
-    ['Otros', billetera, '#purse', 'purse']
-  ]
-  const productCategories = [
-    [
-      'Bolicheros',
-      'Deportivos',
-      'Mocasines',
-      'Plataformas',
-      'Sandalias',
-      'Suecos',
-      'Tacones'
-    ],
-    [
-      'Bolsos',
-      'Carriel',
-      'Tulas',
-      'Bolsos de Mano',
-      'Mochila Wayuu',
-      'Morral de Tela'
-    ],
-    ['Billeteras', 'Correas Mujer', 'Correas Hombre', 'Lociones']
-  ]
+  window.scroll(0, 0)
+  let params = location.pathname.split('/')[2]
+
+  const categories = getCategories(params).categories
+  const productCategories = getCategories(params).productCategories
 
   return (
     <>
-      <h1>Categorías</h1>
+      <h1 className='category-title'>Categorías</h1>
       <section className="image-container">
         {categories.map((v, i) => {
           return (

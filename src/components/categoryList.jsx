@@ -7,7 +7,7 @@ function CategoryList(props) {
 
   return (
     <section className={sectionName} id={categoryLink}>
-      <h1>{sectionName}</h1>
+      <h1 className='category-title'>{sectionName}</h1>
       <div className="section-container">
         {productName &&
           productName.map((v, i) => (

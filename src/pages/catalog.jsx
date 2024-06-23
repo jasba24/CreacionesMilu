@@ -6,9 +6,10 @@ import { Link } from 'react-router-dom'
 function Catalog() {
   return (
     <main>
-      <div className="product-image">
-        <Link to={'/Bolsos'}>Volver</Link>
-      </div>
+      <Link className="yellow-link title" to={'/Bolsos'}>
+        Volver
+      </Link>
+
       <div className="imgs">
         <CatalogList></CatalogList>
       </div>

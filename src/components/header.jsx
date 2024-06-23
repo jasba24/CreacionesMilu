@@ -6,12 +6,12 @@ function Header() {
   return (
     <header>
       <Link to={'/'} className="start">
-        <img className="logo-icon" src={logo} alt="" />
-      </Link>
-      <h1>
-        Marroquineria en cuero de alta calidad <br /> 
-        directamente traido de bucaramanga
+      <h1 className='red-title'>
+        Marroquineria en cuero de alta calidad <br />
+        directamente de fábrica
       </h1>
+      </Link>
+      
     </header>
   )
 }

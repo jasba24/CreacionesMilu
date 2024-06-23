@@ -17,10 +17,12 @@ span {
   color: white;
   text-transform: uppercase;
   font-weight: bold;
+  font-family: myfont;
 }
 
 .phone {
   display: contents;
+  font-family: sans-serif;
 }
 
 .footer .logo {
