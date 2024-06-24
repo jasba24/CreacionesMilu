@@ -18,12 +18,6 @@ function Footer() {
         <a href="https://www.facebook.com/lucelly.bedoyagarzon" target="_blank">
           <img src={facebook} alt="facebook-icon" />
         </a>
-        <a
-          href="https://www.instagram.com/creacionesmilushoes/"
-          target="_blank"
-        >
-          <img src={instagram} alt="instagram-icon" />
-        </a>
         <a className="phone" href="https://wa.link/wg8v7o" target="_blank">
           <img src={whatsapp} alt="whatsapp-icon" />
           +57 315 437 9739

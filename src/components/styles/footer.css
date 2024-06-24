@@ -15,7 +15,6 @@
 span {
   font-size: 40px;
   color: white;
-  text-transform: uppercase;
   font-weight: bold;
   font-family: myfont;
 }
@@ -31,13 +30,6 @@ span {
 
 .footer-link {
   display: flex;
-}
-
-@media (max-width: 2000px) {
-  .footer span,
-  .phone {
-    font-size: 25px;
-  }
 }
 
 @media (max-width: 800px) {

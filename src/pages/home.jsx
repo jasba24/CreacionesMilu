@@ -2,7 +2,6 @@ import React from 'react'
 import '../components/styles/home.css'
 import { Link } from 'react-router-dom'
 import logo1 from '../assets/heroImage.png'
-import logo2 from '../assets/1.jpg'
 import donacion from '../assets/heroImage2.png'
 
 function Home() {
